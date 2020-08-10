@@ -19,11 +19,6 @@ body {
 }
 
 footer {
-	bottom: 0;
-	width: 100%;
-	height: 50vw;
-	background: #c1c1c1;
-	overflow: hidden;
 }
 
 footer img {
@@ -78,9 +73,10 @@ h6 { font-size: 14px;}
 
 .top {
 	width: 100%;
-	background: #FF7F50;
+	background: #17152B;
 	height: 30vh;
 	text-align: left;
+	color: white;
 	overflow: hidden;
 }
 
@@ -98,7 +94,6 @@ h6 { font-size: 14px;}
 	position: relative;
 	top: 8vh;
 	left: 30vw;
-	font-size: ;
 }
 
 .top h1 {
@@ -111,7 +106,7 @@ h6 { font-size: 14px;}
 	position: relative;
 	top: 10vh;
 	left: 30vw;
-	max-width: 45vw;
+	max-width: 40vw;
 }
 
 .middle {
@@ -198,44 +193,100 @@ h6 { font-size: 14px;}
 	left: 1.5vw;
 }
 
-form {
+.contact {
 	position: relative;
-	top: 20vh;
-	height: 100%;
-	font-size: 16px;
+	left: 20vw;
+	height: 60vh;
+	width: 60vw;
 	text-align: center;
+}
+
+input {
+	height: 3vh;
+	border: none;
+	border-bottom: 3px solid #1C6EA4;
+	padding-left: 5px;
 }
 
 #name label {
 	position: relative;
-	top: 1vh;
+	top: 10vh;
 }
 
 #name input {
 	position: relative;
-	top: 1vh;
+	top: 10vh;
 	width: 10vw;
 }
 
 #email label {
 	position: relative;
-	top: 3vh;
+	top: 12vh;
 }
 
 #email input {
 	position: relative;
-	top: 3vh;
-	width: 15vw;
+	top: 12vh;
+	width: 12vw;
 }
 
 #description label {
 	position: relative;
-	top: 5vh;
+	top: 14vh;
 }
 
-#description input {
+textarea {
 	position: relative;
-	top: 6vh;
-	width: 30vw;
-	height: 25vh;
+	top: 15vh;
+	width: 35vw;
+	height: 20vh;
+	border: 3px solid #1C6EA4;
+	padding-left: 5px;
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	background: #17152B;
+	overflow: hidden;
+	width: 100%;
+	height: 30vh;
+}
+
+.about {
+	position: relative;
+	top: 3vh;
+	left: 30%;
+	height: 24vh;
+	width: 20vw;
+	text-align: left;
+	border-right: 1px solid black;
+}
+
+.about img {
+	width: 9vw;
+	height: 9vh;
+}
+
+.about p {
+	width: 18vw;
+}
+
+.explore {
+	position: relative;
+	top: 3vh;
+	margin: 0 auto;
+	height: 24vh;
+	width: 20vw;
+	border-right: 1px solid black;
+}
+
+.links {
+	position: relative;
+	top: 3vh;
 }
