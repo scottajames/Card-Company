@@ -5,6 +5,7 @@
 <head>
 <title>Greeting Cards</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <link rel=stylesheet type="text/css" href="style.css">
 </head>
 
@@ -46,41 +47,48 @@
 
 		<div id="middle">
 
-			<div class="circle-one"></div>
-				<div class="circle-two"></div>
-					<div class="circle-three"></div>
-						<div class="circle-four"></div>
+			<div class="design-services">
+
+			<div class="circles">
+				<div class="circle-one"></div>
+					<div class="circle-two"></div>
+						<div class="circle-three"></div>
+							<div class="circle-four"></div>
+			</div>
 
 
-			<div class="designing">
-			<h2>Designing</h2>
+				<div class="designing">
+				<h2>Designing</h2>
+				<div></div>
 
 					<h3>Design</h3><img src="empty.png">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
 
-						<h3>Design</h3><img src="empty.png">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
-
 							<h3>Design</h3><img src="empty.png">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+
+								<h3>Design</h3><img src="empty.png">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
 				</div>
 
-			<div class="middle-card-image">
-				<img src="empty.png">
-			</div>
+					<div class="middle-card-image">
+						<img src="card.png">
+					</div>
 
-			<div class="services">
+				<div class="services">
 				<h2>Services</h2>
 				<div></div>
 
-					<h3>Service</h3><img src="empty.png">
+					<img src="empty.png"><h3>Service</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
 
-						<h3>Service</h3><img src="empty.png">
+						<img src="empty.png"><h3>Service</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
 
-							<h3>Service</h3><img src="empty.png">
+							<img src="empty.png"><h3>Service</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+
+				</div>
 
 			</div>
 
@@ -98,14 +106,55 @@
 				<img src="empty.png">
 		</div>
 
-	</div>
-
 <footer>
 
-	<div id="contact">
-	</div>
+		<div class="oval-position">
+			<div class="oval"></div>
+		</div>
+
+			<div id="contact">
+
+				<form>
+
+					<label for="fname">First name:</label>
+					<input type="text" name="fname" id="fname" placeholder="first name" style="width: 170px";>
+
+						<label for="lname" class="contact-margin">Last name:</label>
+						<input type="text" name="lname" id="lname" class="contact-margin" placeholder="last name" style="width: 170px";><br><br>
+
+							<label for="email">Email:</label>
+							<input type="text" name="email" id="email" placeholder="email address" style="width: 220px";>
+
+								<label for="subject" class="contact-margin">Subject:</label>
+								<input type="text" name="subject" id="subject" class="contact-margin" placeholder="subject" style="width: 196px";><br>
+
+									<textarea placeholder="if for a card put in as much detail as possible."></textarea><br>
+									<input type="submit" value="submit" id="submit">
+
+				</form>
+
+			</div>
+
+		<div class="terms">
+
+			<div class="footer-float">
+				<div class="icon">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+				</div>
+			</div>
+
+			<div class="footer-float">
+				<div class="privacy-terms">
+					<a href="#" class="privacy-policy">Privacy Policy</a>
+					<a href="#">Terms of Service</a>
+				</div>
+			</div>
+
+		</div>
 
 </footer>
+
+	</div>
 
 </body>
 
