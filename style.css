@@ -1,6 +1,4 @@
 * {
-	padding: 0px;
-	margin: 0px;
 	outline: none;
 }
 
@@ -8,6 +6,7 @@
 body {
 	font-family: 'Noto Sans', sans-serif;
 	overflow-x: hidden;
+	margin: 0px;
 }
 
 header {
@@ -485,4 +484,11 @@ textarea {
 .privacy-policy {
 	border-right: 2px solid white;
 	padding-right: 20px;
+}
+
+@media only screen and (min-width: 1921px) {
+	#content {
+		max-width: 1920px;
+  		margin: auto;
+	}
 }
