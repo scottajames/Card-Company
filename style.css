@@ -2,7 +2,6 @@
 	outline: none;
 }
 
-
 body {
 	font-family: 'Noto Sans', sans-serif;
 	overflow-x: hidden;
@@ -106,7 +105,7 @@ header {
 
 .top-text {
 	position: relative;
-	top: 150px;
+	top: 125px;
 	float: left;
 }
 
@@ -310,9 +309,9 @@ header {
 }
 
 .bottom-text {
-	position: relative;
-	top: 70px;
 	float: left;
+	position: relative;
+	top: 50px;
 }
 
 .bottom-text h2 {
@@ -341,7 +340,7 @@ header {
 
 .bottom-text h3 {
 	position: relative;
-	top: 15px;
+	top: 10px;
 	left: 20px;
 	width: 460px;
 	font-weight: bold;
@@ -350,7 +349,7 @@ header {
 
 .bottom-text a {
 	position: relative;
-	top: 59px;
+	top: 30px;
 	font-size: 20px;
 	font-weight: bold;
 	background: #21386A;
@@ -370,26 +369,21 @@ header {
 }
 
 footer {
-	height: 777px;
-	max-width: 2560px;
-	overflow: hidden;
+	height: 749px;
 }
 
 .oval-position {
 	position: absolute;
-	height: 777px;
-	max-width: 1920px;
-	overflow: hidden;
 }
 
 .oval {
 	position: relative;
-	top: 250px;
-	left: -960px;
-	width: 3840px;
-	height: 1920px;
-	background: #21386A;
-	border-radius: 3840px / 1920px;
+	top: 262px;
+	left: 100px;
+	height: 487px;
+    width: 1720px;
+    border-radius: 860px 860px 0 0;
+	background-color: #21386A; 
 }
 
 #contact {
