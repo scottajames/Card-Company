@@ -422,17 +422,12 @@ textarea {
 .terms {
 	position: relative;
 	top: 100px;
-	left: 600px;
-	width: 1200px;
-	margin: 0 auto;
+	left: 50%;
 }
 
 .terms a {
 	color: white;
 	display: inline;
-}
-
-.footer-float {
 	float: left;
 }
 
@@ -443,8 +438,8 @@ textarea {
 
 .privacy-terms a {
 	position: relative;
-	top: 10px;
-	left: 100px;
+	top: 8px;
+	left: 125px;
 	font-size: 20px;
 	text-decoration: none;
 	margin-left: 20px;
@@ -454,7 +449,7 @@ textarea {
 	border-bottom: 1px solid white;
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1921px) {
 	#content {
 		max-width: 1920px;
 		margin: auto;

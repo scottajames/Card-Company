@@ -139,22 +139,16 @@
 					<input type="submit" value="submit" id="submit">
 			</div>
 
-		<div class="terms">
+			<div class="terms">
 
-			<div class="footer-float">
-				<div class="icon">
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-				</div>
-			</div>
+				<a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
 
-			<div class="footer-float">
 				<div class="privacy-terms">
 					<a href="#">Privacy Policy</a>
 					<a href="#">Terms of Service</a>
 				</div>
+				
 			</div>
-
-		</div>
 
 </footer>
 
