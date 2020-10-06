@@ -1,3 +1,11 @@
+:root {
+	--white-color: white;
+	--black-color: #3e3e3e;
+	--other-color: #EEB750;
+	--text-size-1: 2.4vmin;
+	--text-size-2: 3.2vmin;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -10,7 +18,7 @@ html {
 }
 
 body {
-	
+
 }
 
 header {
@@ -37,8 +45,8 @@ header img {
 
 header nav li a {
 	text-decoration: none;
-	color: white;
-	font-size: 1.5rem;
+	color: var(--white-color);
+	font-size: var(--text-size-1);
 	font-weight: bold;
 	margin: 20px;
 	position: relative;
@@ -52,33 +60,32 @@ header li {
 
 header nav a:hover {
 	padding-bottom: 5px;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid var(--white-color);
 }
 
 header .header-text {
 	position: absolute;
 	top: 25vh;
-	left: 2vw;
+	left: 5vw;
 }
 
 header .header-text h1 {
-	color: white;
-	font-size: 1.5rem;
-	width: 30vw;
+	color: var(--white-color);
+	font-size: var(--text-size-1);
 }
 
 header .header-text div {
-	font-size: 2.2rem;
-	color: #EEB750;
+	font-size: var(--text-size-2);
+	color: var(--other-color);
 }
 
 header .header-text a {
 	color: black;
-	background: white;
+	background: var(--white-color);
 	text-decoration: none;
 	border-radius: 5px;
 	padding: 15px 60px;
 	font-weight: bold;
 	font-size: 1.25rem;
-	color: #3e3e3e;
+	color: var(--black-color);
 }
