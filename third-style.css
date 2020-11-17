@@ -33,9 +33,9 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 0px 0px;
   grid-template-areas:
-    "div1 div1 . . div2 div2"
+    "div1 div1 . div2 div2 ."
     "div3 div3 div4 div4 div5 div5"
-    "div6 div6 . . div7 div7";
+    "div6 div6 . div7 div7 .";
 }
 
 .div1 { grid-area: div1;
