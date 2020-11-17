@@ -165,7 +165,7 @@ body {
 }
 .div6 a {
 	position: relative;
-	top: 1vh;
+	top: 2vh;
 	background: var(--blue-color);
 	color: var(--white-color);
 	border-radius: 5px;
