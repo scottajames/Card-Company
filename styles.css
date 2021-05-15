@@ -3,7 +3,7 @@
   --off-white-color: #F6F6F6;
   --black-color: #3e3e3e;
   --grey-color: #AAAAAA;
-  --other-color: #EEB750;
+  --other-color: #F27788;
   --text-size-0: 2vmin;
   --text-size-1: 2.5vmin;
   --text-size-2: 3.5vmin;
@@ -41,7 +41,7 @@ header li {
 
 header a {
   position: relative;
-  top: 5vh;
+  top: 1vh;
   text-decoration: none;
   font-size: var(--text-size-1);
   font-weight: bolder;
@@ -51,6 +51,12 @@ header a {
 header a:hover {
   padding-bottom: 5px;
   border-bottom: 1px solid white;
+}
+
+header img {
+  position: absolute;
+  max-width: 20vw;
+  min-width: 175px;
 }
 
 /* Header Content */
@@ -64,10 +70,10 @@ header a:hover {
 }
 
 #header-content {
-  width: 70vw;
+  width: 80vw;
   position: absolute;
   top: 0vh;
-  left: 15vw;
+  left: 10vw;
 }
 
 .animate__animated.animate__fadeIn {
