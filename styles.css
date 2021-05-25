@@ -55,14 +55,14 @@ header a:hover {
 
 header img {
   position: absolute;
-  max-width: 20vw;
-  min-width: 175px;
+  width: 10vw;
+  min-width: 100px;
 }
 
 /* Header Content */
 
 .header-image {
-  background-image: url(background.png);
+  background-image: url(images/background.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
