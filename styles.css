@@ -24,7 +24,6 @@ body {
 header {
   width: 100vw;
   height: 100vh;
-  font-family: 'Schoolbell', cursive;
 
 }
 header li {
@@ -69,9 +68,11 @@ header a {
   color: var(--other-color);
 }
 .header-text a {
-  font-family: 'Patrick Hand SC', cursive;
+  font-family: 'Schoolbell', cursive;
   background-color: var(--other-color);
   border-radius: 5px;
+  font-size: var(--text-size-1);
+  font-weight: bold;
   padding: 1.5vh 3vw;
 }
 .header-text a:hover {
@@ -121,9 +122,9 @@ header a {
 }
 .about-text p {
   font-size: var(--text-size-1);
+  font-family: sans-serif;
   background-color: var(--other-color);
   color: var(--white-color);
-  font-family: 'Patrick Hand SC', cursive;
   padding: 3vw 3vh;
 }
 .about-text span {
@@ -174,16 +175,16 @@ header a {
   font-size: var(--text-size-0);
   color: var(--grey-color);
   padding-bottom: 5vh;
-  font-family: 'Patrick Hand SC', cursive;
+  font-family: sans-serif;
 }
 .services-text a {
-  font-size: var(--text-size-0);
   background-color: var(--other-color);
   color: var(--white-color);
   border-radius: 5px;
   padding: 1.5vh 3vw;
   text-decoration: none;
-  font-family: 'Patrick Hand SC', cursive;
+  font-size: var(--text-size-1);
+  font-family: 'Schoolbell', cursive;
   font-weight: bold;
 }
 
@@ -204,9 +205,9 @@ header a {
   font-size: var(--text-size-1);
 }
 .services-detailed p {
+  font-family: sans-serif;
   font-size: var(--text-size-0);
   color: var(--grey-color);
-  font-family: 'Patrick Hand SC', cursive;
 }
 
 
@@ -239,20 +240,20 @@ header a {
   color: var(--other-color);
 }
 .awards-text p {
+  font-family: sans-serif;
   font-size: var(--text-size-0);
   color: var(--grey-color);
   width: 30vw;
   padding-bottom: 5vh;
-  font-family: 'Patrick Hand SC', cursive;
 }
 .awards-text a {
-  font-size: var(--text-size-0);
   background-color: var(--other-color);
   color: var(--white-color);
   border-radius: 5px;
   padding: 1.5vh 3vw;
   text-decoration: none;
-  font-family: 'Patrick Hand SC', cursive;
+  font-size: var(--text-size-1);
+  font-family: 'Schoolbell', cursive;
   font-weight: bold;
 }
 .awards-image { grid-area: awards-image;
@@ -305,9 +306,9 @@ footer {
 #contact a {
   display: inline-block;
   text-decoration: none;
+  font-family: sans-serif;
   font-size: var(--text-size-0);
   color: var(--grey-color);
-  font-family: 'Patrick Hand SC', cursive;
 }
 #contact a:hover {
   color: var(--white-color);
@@ -317,12 +318,12 @@ footer {
   color: #3b5998;
 }
 #contact h1 {
-  font-family: 'Schoolbell', cursive;
   font-size: var(--text-size-1);
+  font-family: 'Schoolbell', cursive;
 }
 #contact h3 {
   display: inline-block;
   font-weight: lighter;
+  font-family: sans-serif;
   font-size: var(--text-size-0);
-  font-family: 'Patrick Hand SC', cursive;
 }
