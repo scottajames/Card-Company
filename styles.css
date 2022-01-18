@@ -8,16 +8,10 @@
   --text-size-1: 2.5vmin;
   --text-size-2: 3.5vmin;
 }
-
-input, textarea, select {
-   -webkit-appearance: none;
-}
-
 * {
   padding: 0;
   margin: 0;
   outline: none;
-  font-family: 'Noto Sans', sans-serif;
 }
 
 html {
@@ -27,18 +21,17 @@ html {
 body {
   overflow-x: hidden;
 }
-
 header {
   width: 100vw;
   height: 100vh;
-}
+  font-family: 'Schoolbell', cursive;
 
+}
 header li {
   display: inline;
   float: right;
   margin: 1vw;
 }
-
 header a {
   position: relative;
   top: 1vh;
@@ -46,58 +39,41 @@ header a {
   font-size: var(--text-size-1);
   font-weight: bolder;
   color: var(--white-color);
-}
-
-header a:hover {
-  padding-bottom: 5px;
-  border-bottom: 1px solid white;
-}
-
-header img {
-  position: absolute;
-  width: 10vw;
-  min-width: 100px;
+  font-family: 'Schoolbell', cursive;
 }
 
 /* Header Content */
 
 .header-image {
-  background-image: url(images/background.svg);
+  background-image: url(images/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
 }
-
 #header-content {
   width: 80vw;
   position: absolute;
   top: 0vh;
   left: 10vw;
 }
-
-.animate__animated.animate__fadeIn {
-  animation-duration: 2s;
-}
-
 .header-text h1 {
   position: absolute;
   top: 35vh;
   left: 35vw;
   font-size: var(--text-size-2);
   color: var(--white-color);
+  font-family: 'Schoolbell', cursive;
 }
-
 .header-text span {
   color: var(--other-color);
 }
-
 .header-text a {
+  font-family: 'Patrick Hand SC', cursive;
   background-color: var(--other-color);
   border-radius: 5px;
   padding: 1.5vh 3vw;
 }
-
 .header-text a:hover {
   border: none;
   padding: 1.5vh 3vw;
@@ -116,9 +92,9 @@ header img {
     "about about"
     "services services"
     "awards awards";
-    position: relative;
-    left: 15vw;
-    width: 70vw;
+  position: relative;
+  left: 15vw;
+  width: 70vw;
 }
 
 
@@ -147,9 +123,11 @@ header img {
   font-size: var(--text-size-1);
   background-color: var(--other-color);
   color: var(--white-color);
+  font-family: 'Patrick Hand SC', cursive;
   padding: 3vw 3vh;
 }
 .about-text span {
+  font-family: 'Schoolbell', cursive;
   font-size: var(--text-size-2);
 }
 .about-image img { grid-area: about-image;
@@ -179,6 +157,7 @@ header img {
   align-self: center;
 }
 .services-text h2 {
+  font-family: 'Schoolbell', cursive;
   color: var(--other-color);
   font-size: var(--text-size-2);
 }
@@ -189,11 +168,13 @@ header img {
 .services-text b {
   font-size: var(--text-size-1);
   color: var(--black-color);
+  font-family: 'Patrick Hand SC', cursive;
 }
 .services-text p {
   font-size: var(--text-size-0);
   color: var(--grey-color);
   padding-bottom: 5vh;
+  font-family: 'Patrick Hand SC', cursive;
 }
 .services-text a {
   font-size: var(--text-size-0);
@@ -202,6 +183,8 @@ header img {
   border-radius: 5px;
   padding: 1.5vh 3vw;
   text-decoration: none;
+  font-family: 'Patrick Hand SC', cursive;
+  font-weight: bold;
 }
 
 .services-detailed {
@@ -217,11 +200,13 @@ header img {
   margin-right: 1vw;
 }
 .services-detailed h2 {
+  font-family: 'Schoolbell', cursive;
   font-size: var(--text-size-1);
 }
 .services-detailed p {
   font-size: var(--text-size-0);
   color: var(--grey-color);
+  font-family: 'Patrick Hand SC', cursive;
 }
 
 
@@ -249,6 +234,7 @@ header img {
   align-self: center;
 }
 .awards-text h2 {
+  font-family: 'Schoolbell', cursive;
   font-size: var(--text-size-1);
   color: var(--other-color);
 }
@@ -257,6 +243,7 @@ header img {
   color: var(--grey-color);
   width: 30vw;
   padding-bottom: 5vh;
+  font-family: 'Patrick Hand SC', cursive;
 }
 .awards-text a {
   font-size: var(--text-size-0);
@@ -265,6 +252,8 @@ header img {
   border-radius: 5px;
   padding: 1.5vh 3vw;
   text-decoration: none;
+  font-family: 'Patrick Hand SC', cursive;
+  font-weight: bold;
 }
 .awards-image { grid-area: awards-image;
   text-align: center;
@@ -282,61 +271,58 @@ header img {
 /* footer content */
 
 footer {
-  width: 40vw;
-  background-size: 100%;
-  margin: 0 auto;
-  text-align: center;
+  width: 100vw;
+  background: var(--black-color);
 }
-input {
-  font-size: var(--text-size-0);
-  width: 40vw;
-  margin: 1vh 0vw;
-  border-radius: 5px;
-  padding: 5px;
-  border: none;
-  background-color: #EEEEEE;
-}
-textarea {
-  font-size: var(--text-size-0);
-  display: block;
-  height: 20vh;
-  width: 40vw;
-  border-radius: 5px;
-  padding: 5px;
-  margin: 1vh auto;
-  resize: none;
-  border: none;
-  background-color: #EEEEEE;
-}
-#contact h3 {
-  font-size: var(--text-size-2);
-  margin: 1vh 0vw;
-}
-#contact p {
-  font-size: var(--text-size-0);
-  margin: 2vh 0vw;
-}
-#submit {
+#contact {
+  color: var(--white-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0px 0px;
+  grid-template-areas:
+    "quickLinks contactUS";
   position: relative;
-  left: -15vw;
-  text-align: center;
-  border: none;
-  height: 5vh;
-  width: 10vw;
-  padding: 5px;
-  background-color: var(--other-color);
-  color: white;
+  left: 20vw;
+  width: 60vw;
+  padding: 2.5vh 0vw 2.5vh 0vw;
 }
-#submit:hover {
-  cursor: pointer;
+.quickLinks {
+  display: grid;
+  grid-area: quickLinks;
+  align-items: center;
+  margin: 0 auto;
+}
+.contactUS {
+  display: grid;
+  grid-area: contactUS;
+  align-items: center;
+  margin: 0 auto;
+}
+#contact li {
+  list-style-type: none;
+}
+#contact a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: var(--text-size-0);
+  color: var(--grey-color);
+  font-family: 'Patrick Hand SC', cursive;
+}
+#contact a:hover {
+  color: var(--white-color);
 }
 #contact i {
   font-size: var(--text-size-2);
   color: #3b5998;
-  margin: 1vh auto;
-  margin-bottom: 9vh;
 }
-
-#CookieDeclaration {
-  display: none;
+#contact h1 {
+  font-family: 'Schoolbell', cursive;
+  font-size: var(--text-size-1);
+}
+#contact h3 {
+  display: inline-block;
+  font-weight: lighter;
+  font-size: var(--text-size-0);
+  font-family: 'Patrick Hand SC', cursive;
 }
