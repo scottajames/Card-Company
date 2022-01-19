@@ -30,6 +30,7 @@ header li {
   display: inline;
   float: right;
   margin: 1vw;
+  font-family: 'Roboto', sans-serif;
 }
 header a {
   position: relative;
@@ -38,13 +39,12 @@ header a {
   font-size: var(--text-size-1);
   font-weight: bolder;
   color: var(--white-color);
-  font-family: 'Schoolbell', cursive;
 }
 
 /* Header Content */
 
 .header-image {
-  background-image: url(background.jpg);
+  background-image: url(images/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -62,18 +62,18 @@ header a {
   left: 35vw;
   font-size: var(--text-size-2);
   color: var(--white-color);
-  font-family: 'Schoolbell', cursive;
+  font-family: 'Open Sans', sans-serif;
 }
 .header-text span {
   color: var(--other-color);
 }
 .header-text a {
-  font-family: 'Schoolbell', cursive;
   background-color: var(--other-color);
   border-radius: 5px;
   font-size: var(--text-size-1);
   font-weight: bold;
   padding: 1.5vh 3vw;
+  font-family: 'Roboto', sans-serif;
 }
 .header-text a:hover {
   border: none;
@@ -122,14 +122,14 @@ header a {
 }
 .about-text p {
   font-size: var(--text-size-1);
-  font-family: sans-serif;
   background-color: var(--other-color);
   color: var(--white-color);
   padding: 3vw 3vh;
+  font-family: 'Open Sans', sans-serif;
 }
 .about-text span {
-  font-family: 'Schoolbell', cursive;
   font-size: var(--text-size-2);
+  font-family: 'Roboto', sans-serif;
 }
 .about-image img { grid-area: about-image;
   width: 35vw;
@@ -158,9 +158,9 @@ header a {
   align-self: center;
 }
 .services-text h2 {
-  font-family: 'Schoolbell', cursive;
   color: var(--other-color);
   font-size: var(--text-size-2);
+  font-family: 'Roboto', sans-serif;
 }
 .services-text span {
   padding-bottom: 1vw;
@@ -169,13 +169,12 @@ header a {
 .services-text b {
   font-size: var(--text-size-1);
   color: var(--black-color);
-  font-family: 'Patrick Hand SC', cursive;
 }
 .services-text p {
   font-size: var(--text-size-0);
   color: var(--grey-color);
   padding-bottom: 5vh;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .services-text a {
   background-color: var(--other-color);
@@ -184,8 +183,8 @@ header a {
   padding: 1.5vh 3vw;
   text-decoration: none;
   font-size: var(--text-size-1);
-  font-family: 'Schoolbell', cursive;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
 
 .services-detailed {
@@ -201,13 +200,14 @@ header a {
   margin-right: 1vw;
 }
 .services-detailed h2 {
-  font-family: 'Schoolbell', cursive;
   font-size: var(--text-size-1);
+  font-family: 'Roboto', sans-serif;
 }
 .services-detailed p {
-  font-family: sans-serif;
   font-size: var(--text-size-0);
   color: var(--grey-color);
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0.5vh;
 }
 
 
@@ -235,16 +235,16 @@ header a {
   align-self: center;
 }
 .awards-text h2 {
-  font-family: 'Schoolbell', cursive;
   font-size: var(--text-size-1);
   color: var(--other-color);
+  font-family: 'Roboto', sans-serif;
 }
 .awards-text p {
-  font-family: sans-serif;
   font-size: var(--text-size-0);
   color: var(--grey-color);
   width: 30vw;
   padding-bottom: 5vh;
+  font-family: 'Open Sans', sans-serif;
 }
 .awards-text a {
   background-color: var(--other-color);
@@ -253,8 +253,8 @@ header a {
   padding: 1.5vh 3vw;
   text-decoration: none;
   font-size: var(--text-size-1);
-  font-family: 'Schoolbell', cursive;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
 .awards-image { grid-area: awards-image;
   text-align: center;
@@ -306,9 +306,9 @@ footer {
 #contact a {
   display: inline-block;
   text-decoration: none;
-  font-family: sans-serif;
   font-size: var(--text-size-0);
   color: var(--grey-color);
+  font-family: 'Open Sans', sans-serif;
 }
 #contact a:hover {
   color: var(--white-color);
@@ -319,11 +319,11 @@ footer {
 }
 #contact h1 {
   font-size: var(--text-size-1);
-  font-family: 'Schoolbell', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 #contact h3 {
   display: inline-block;
   font-weight: lighter;
-  font-family: sans-serif;
   font-size: var(--text-size-0);
+  font-family: 'Open Sans', sans-serif;
 }
