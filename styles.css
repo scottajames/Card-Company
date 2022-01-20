@@ -44,7 +44,7 @@ header a {
 /* Header Content */
 
 .header-image {
-  background-image: url(background.jpg);
+  background-image: url(images/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -87,12 +87,13 @@ header a {
 #content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0fr 0fr 0.75fr;
   grid-gap: 0px 0px;
   grid-template-areas:
     "about about"
     "services services"
-    "awards awards";
+    "awards awards"
+    "contact contact";
   position: relative;
   left: 15vw;
   width: 70vw;
@@ -111,12 +112,11 @@ header a {
   grid-template-areas:
     "about-text about-image";
   grid-area: about;
-  position: relative;
-  top: 10.5vh;
+  align-items: center;
 }
 .about-text { grid-area: about-text;
   position: relative;
-  top: 15.5vh;
+  top: 5vh;
   left: 5vw;
   width: 35vw;
 }
@@ -131,7 +131,10 @@ header a {
   font-size: var(--text-size-2);
   font-family: 'Roboto', sans-serif;
 }
-.about-image img { grid-area: about-image;
+.about-image img {
+  grid-area: about-image;
+  position: relative;
+  top: -5vh;
   width: 35vw;
   height: 31vh;
 }
@@ -144,18 +147,15 @@ header a {
 .services {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 0px 0px;
   grid-template-areas:
     "services-text services-detailed";
   grid-area: services;
   background-color: var(--off-white-color);
+  align-items: center;
 }
 .services-text {
   grid-area: services-text;
   padding: 5vw;
-  justify-content: center;
-  align-self: center;
 }
 .services-text h2 {
   color: var(--other-color);
@@ -186,12 +186,9 @@ header a {
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
 }
-
 .services-detailed {
   grid-area: services-detailed;
   padding: 5vw;
-  justify-content: center;
-  align-self: center;
 }
 .services-detailed i {
   font-size: var(--text-size-2);
@@ -207,7 +204,8 @@ header a {
   font-size: var(--text-size-0);
   color: var(--grey-color);
   font-family: 'Open Sans', sans-serif;
-  margin-top: 0.5vh;
+  float: left;
+  margin-bottom: 1vh;
 }
 
 
@@ -218,7 +216,6 @@ header a {
 .awards {
   position: relative;
   top: 10vh;
-  height: 10vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -226,13 +223,12 @@ header a {
   grid-template-areas:
     "awards-text awards-image";
   grid-area: awards;
+  align-items: center;
 }
 
 .awards-text { grid-area: awards-text;
   position: relative;
   left: 5vw;
-  justify-content: center;
-  align-self: center;
 }
 .awards-text h2 {
   font-size: var(--text-size-1);
@@ -256,11 +252,7 @@ header a {
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
 }
-.awards-image { grid-area: awards-image;
-  text-align: center;
-  justify-content: center;
-  align-self: center;
-}
+.awards-image { grid-area: awards-image;}
 .awards-image img {
   width: 30vw;
   height: 40vh;
@@ -269,61 +261,48 @@ header a {
 
 
 
-/* footer content */
+/* contact element */
 
-footer {
-  width: 100vw;
-  background: var(--black-color);
-}
 #contact {
-  color: var(--white-color);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 0px 0px;
-  grid-template-areas:
-    "quickLinks contactUS";
+  grid-area: contact;
+  align-content:space-evenly;
+  text-align: center;
+  width: 20vw;
+  height: 10vh;
   position: relative;
-  left: 20vw;
-  width: 60vw;
-  padding: 2.5vh 0vw 2.5vh 0vw;
-}
-.quickLinks {
-  display: grid;
-  grid-area: quickLinks;
-  align-items: center;
-  margin: 0 auto;
-}
-.contactUS {
-  display: grid;
-  grid-area: contactUS;
-  align-items: center;
-  margin: 0 auto;
-}
-#contact li {
-  list-style-type: none;
-}
-#contact a {
-  display: inline-block;
-  text-decoration: none;
-  font-size: var(--text-size-0);
-  color: var(--grey-color);
-  font-family: 'Open Sans', sans-serif;
-}
-#contact a:hover {
-  color: var(--white-color);
+  margin: auto;
+  background-color: var(--off-white-color);
+  margin-bottom: 5vh;
+  padding: 5vh 5vw 5vh 5vw;
 }
 #contact i {
   font-size: var(--text-size-2);
   color: #3b5998;
 }
 #contact h1 {
-  font-size: var(--text-size-1);
   font-family: 'Roboto', sans-serif;
+  font-size: var(--text-size-1);
+  color: var(--other-color);
 }
-#contact h3 {
-  display: inline-block;
-  font-weight: lighter;
+#contact h2 {
+  font-family: 'Roboto', sans-serif;
   font-size: var(--text-size-0);
+  color: var(--black-color);
+}
+#contact p {
   font-family: 'Open Sans', sans-serif;
+  font-size: var(--text-size-0);
+  color: var(--grey-color); 
+}
+
+
+
+
+/* footer content */
+
+footer {
+  height: 1vh;
+  width: 100vw;
+  background-color: var(--black-color);
 }
