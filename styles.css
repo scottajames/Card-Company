@@ -282,6 +282,7 @@ header a {
   font-family: 'Open Sans', sans-serif;
   color: var(--black-color);
   margin: 1vh 0vw 1vh 0vw;
+  padding-left: 5px;
 }
 #contact textarea {
   display: block;
@@ -292,6 +293,7 @@ header a {
   color: var(--black-color);
   margin: 1vh 0vw 1vh 0vw;
   resize: none;
+  padding-left: 5px;
 }
 #contact button {
   float: left;
