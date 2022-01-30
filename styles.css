@@ -58,6 +58,9 @@ header a {
   top: 0vh;
   left: 10vw;
 }
+#header-content img {
+  width: 100px;
+}
 .header-text h1 {
   position: absolute;
   top: 35vh;
@@ -114,7 +117,7 @@ header a {
 .about-text { grid-area: about-text;
   position: relative;
   top: 5vh;
-  left: 5vw;
+  left: 2.5vw;
   width: 35vw;
 }
 .about-text p {
@@ -132,6 +135,7 @@ header a {
   grid-area: about-image;
   position: relative;
   top: -5vh;
+  left: -2.5vw;
   width: 35vw;
   height: 31vh;
 }
@@ -296,6 +300,7 @@ header a {
   resize: none;
   padding-left: 5px;
   border: 1px solid var(--grey-color);
+}
 }
 #contact button {
   float: left;
