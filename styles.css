@@ -25,20 +25,49 @@ header {
   height: 100vh;
 }
 header li {
-  display: inline;
   float: right;
-  margin: 1vw;
+  margin: 1vh 1vw;
+  display: inline;
   font-family: 'Roboto', sans-serif;
 }
-header a {
-  position: relative;
-  top: 1vh;
-  text-decoration: none;
-  font-size: var(--text-size-1);
-  font-weight: bolder;
+h1 {
   color: var(--white-color);
+  font-size: var(--text-size-2);
+  font-family: 'Open Sans', sans-serif;
 }
-
+h2 {
+  color: var(--other-color);
+  font-size: var(--text-size-2);
+  font-family: 'Roboto', sans-serif;
+}
+h3 {
+  font-weight: lighter;
+  font-size: var(--text-size-1);
+  font-family: 'Open Sans', sans-serif;
+}
+p {
+  font-size: var(--text-size-0);
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  color: var(--white-color);
+  font-size: var(--text-size-1);
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-weight: bolder;
+}
+textarea, input {
+  resize: none;
+  display: block;
+  width: 100%;
+  font-size: var(--text-size-0);
+  font-family: 'Open Sans', sans-serif;
+  color: var(--black-color);
+  padding-left: 5px;
+  border: 1px solid var(--grey-color);
+  border-radius: 0.1vw;
+  margin: 1vh 0vw 1vh 0vw;
+}
 
 
 
@@ -46,37 +75,30 @@ header a {
 /* Header Content */
 
 .header-image {
-  background-image: url(images/background.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(images/background.jpg);
 }
 #header-content {
   width: 80vw;
   position: absolute;
-  top: 0vh;
   left: 10vw;
+  top: 0;
 }
-#header-content img {
-  width: 100px;
-}
-.header-text h1 {
-  position: absolute;
-  top: 35vh;
-  left: 35vw;
-  font-size: var(--text-size-2);
-  color: var(--white-color);
-  font-family: 'Open Sans', sans-serif;
+.header-text {
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 .header-text a {
-  background-color: var(--other-color);
-  border-radius: 5px;
   border: none;
-  font-size: var(--text-size-1);
-  font-weight: bold;
+  border-radius: 5px;
   padding: 1.5vh 3vw;
-  font-family: 'Roboto', sans-serif;
+  background-color: var(--other-color);
 }
 
 
@@ -88,7 +110,7 @@ header a {
 #content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.25fr 1fr 1fr 1fr;
   grid-gap: 0px 0px;
   grid-template-areas:
     "about about"
@@ -115,17 +137,16 @@ header a {
   align-items: center;
 }
 .about-text { grid-area: about-text;
-  position: relative;
-  top: 5vh;
-  left: 2.5vw;
   width: 35vw;
+  height: 30vh;
+  position: relative;
+  top: 7.5vh;
+  left: 2.5vw;
 }
-.about-text p {
-  font-size: var(--text-size-1);
-  background-color: var(--other-color);
-  color: var(--white-color);
+.about-text h3 {
   padding: 3vw 3vh;
-  font-family: 'Open Sans', sans-serif;
+  color: var(--white-color);
+  background-color: var(--other-color);
 }
 .about-text span {
   font-size: var(--text-size-2);
@@ -133,11 +154,11 @@ header a {
 }
 .about-image img {
   grid-area: about-image;
-  position: relative;
-  top: -5vh;
-  left: -2.5vw;
   width: 35vw;
-  height: 31vh;
+  height: 30vh;
+  position: relative;
+  top: -7.5vh;
+  left: -2.5vw;
 }
 
 
@@ -159,11 +180,6 @@ header a {
   grid-area: services-text;
   padding: 5vw;
 }
-.services-text h2 {
-  color: var(--other-color);
-  font-size: var(--text-size-2);
-  font-family: 'Roboto', sans-serif;
-}
 .services-text span {
   padding-bottom: 1vw;
   border-bottom: solid 2px var(--other-color);
@@ -173,41 +189,31 @@ header a {
   color: var(--black-color);
 }
 .services-text p {
-  font-size: var(--text-size-0);
-  color: var(--grey-color);
   padding-bottom: 5vh;
-  font-family: 'Open Sans', sans-serif;
+  color: var(--grey-color);
 }
 .services-text a {
-  background-color: var(--other-color);
-  color: var(--white-color);
   border-radius: 5px;
   padding: 1.5vh 3vw;
-  text-decoration: none;
-  font-size: var(--text-size-1);
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  background-color: var(--other-color);
 }
 .services-detailed {
   grid-area: services-detailed;
   padding: 5vw;
 }
 .services-detailed i {
-  font-size: var(--text-size-2);
-  color: var(--other-color);
   float: left;
   margin-right: 1vw;
+  font-size: var(--text-size-2);
+  color: var(--other-color);
 }
 .services-detailed h2 {
-  font-size: var(--text-size-1);
-  font-family: 'Roboto', sans-serif;
+  color: var(--black-color);
 }
 .services-detailed p {
-  font-size: var(--text-size-0);
-  color: var(--grey-color);
-  font-family: 'Open Sans', sans-serif;
   float: left;
   margin-bottom: 1vh;
+  color: var(--grey-color);
 }
 
 
@@ -226,27 +232,15 @@ header a {
   margin: auto;
 }
 .awards-text { grid-area: awards-text;}
-.awards-text h2 {
-  font-size: var(--text-size-1);
-  color: var(--other-color);
-  font-family: 'Roboto', sans-serif;
-}
 .awards-text p {
-  font-size: var(--text-size-0);
-  color: var(--grey-color);
   width: 30vw;
   padding-bottom: 5vh;
-  font-family: 'Open Sans', sans-serif;
+  color: var(--grey-color);
 }
 .awards-text a {
-  background-color: var(--other-color);
-  color: var(--white-color);
   border-radius: 5px;
   padding: 1.5vh 3vw;
-  text-decoration: none;
-  font-size: var(--text-size-1);
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  background-color: var(--other-color);
 }
 .awards-image { grid-area: awards-image;}
 .awards-image img {
@@ -267,51 +261,24 @@ header a {
   margin: auto;
   width: 40vw;
 }
-#contact h2 {
-  color: var(--other-color);
-  font-size: var(--text-size-2);
-  font-family: 'Roboto', sans-serif;
-}
-#contact p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: var(--text-size-1);
+#contact h3 {
   color: var(--black-color);
-  width: 35vw;
-  margin: auto;
 }
-#contact input {
-  display: block;
-  width: 100%;
-  font-size: var(--text-size-0);
-  font-family: 'Open Sans', sans-serif;
-  color: var(--black-color);
-  margin: 1vh 0vw 1vh 0vw;
-  padding-left: 5px;
-  border: 1px solid var(--grey-color);
-}
-#contact textarea {
-  display: block;
-  margin: auto;
-  width: 100%;
-  font-size: var(--text-size-0);
-  font-family: 'Open Sans', sans-serif;
-  color: var(--black-color);
-  margin: 1vh 0vw 1vh 0vw;
-  resize: none;
-  padding-left: 5px;
-  border: 1px solid var(--grey-color);
+#contact a {
+  color: blue;
+  text-decoration: underline;
 }
 #contact button {
   float: left;
-  background-color: var(--other-color);
-  color: var(--white-color);
   border: none;
   border-radius: 5px;
   padding: 1.5vh 3vw;
-  font-size: var(--text-size-1);
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
   margin: 1vh 0vw 1vh 0vw;
+  background-color: var(--other-color);
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: var(--text-size-1);
+  font-family: 'Roboto', sans-serif;
   cursor: pointer;
 }
 #contact i {
