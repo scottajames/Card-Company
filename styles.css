@@ -87,6 +87,15 @@ textarea, input {
   left: 10vw;
   top: 0;
 }
+.Navbar img {
+  width: 5vw;
+  min-width: 40px;
+}
+.Navbar a {
+  height: 5vh;
+  display: grid;
+  align-items: center;
+}
 .header-text {
   width: 100vw;
   height: 80vh;
