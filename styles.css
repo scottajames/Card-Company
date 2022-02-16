@@ -16,7 +16,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   overflow-x: hidden;
 }
@@ -86,6 +85,7 @@ textarea, input {
   position: absolute;
   left: 10vw;
   top: 0;
+  overflow-x: hidden;
 }
 .Navbar img {
   width: 5vw;
