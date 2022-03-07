@@ -81,14 +81,19 @@ textarea, input {
   background-image: url(images/background.jpg);
 }
 #header-content {
-  width: 80vw;
+  width: 100vw;
   position: absolute;
-  left: 10vw;
   top: 0;
   overflow-x: hidden;
 }
+.Navbar {
+  margin: 1vw;
+  position: relative;
+}
 .Navbar img {
-  width: 40%;
+  width: 5vw;
+  max-width: 100px;
+  min-width: 50px;
 }
 .Navbar a {
   height: 5vh;
